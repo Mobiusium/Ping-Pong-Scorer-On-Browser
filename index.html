@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobi's Ping Pong Scorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode"> <!-- Set default to light mode -->
+  <h1>Mobi's Ping Pong Scorer</h1>
+
+  <!-- Portrait Mode Warning -->
+  <div class="portrait-warning">
+    <span class="en-warning">Please rotate your device to landscape mode for the best experience.</span>
+    <span class="zh-warning" style="display: none;">请将设备转到横屏以获得最佳体验。</span>
+  </div>
+
+  <!-- Scoreboard Container -->
+  <div class="scoreboard-container">
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <div class="player" id="player1">
+        <h2 class="player-title" onclick="changeInitialServer(1)">Player 1</h2>
+        <div class="player-score" id="score1" onclick="addPoint(1)">0</div>
+      </div>
+      <div class="player" id="player2">
+        <h2 class="player-title" onclick="changeInitialServer(2)">Player 2</h2>
+        <div class="player-score" id="score2" onclick="addPoint(2)">0</div>
+      </div>
+    </div>
+    <!-- Deuce Message -->
+    <div class="deuce-message" id="deuce-message"></div>
+  </div>
+
+  <!-- Control Buttons -->
+  <div class="buttons">
+    <button onclick="resetGame()">Reset Game</button>
+  </div>
+
+  <!-- Settings Section -->
+  <div class="settings">
+    <div class="winning-points">
+      <label for="winning-points">Winning Points</label>
+      <input type="range" id="winning-points" min="3" max="21" value="7" step="1" oninput="updateWinningPointsLabel(this.value)">
+      <span id="winning-points-label">7</span>
+    </div>
+  </div>
+
+  <!-- Language Switcher -->
+  <div class="language-switcher">
+    <button onclick="toggleLanguage()">中文</button>
+    <button onclick="toggleDarkMode()">Dark Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
