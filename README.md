@@ -2,6 +2,10 @@
 
 Mobi’s Ping Pong Scorer is a simple web-based tool to help you and your friends keep track of your ping pong game score. Just open it in your browser or use this link to get started.
 
+## Link
+
+(https://mobiusium.github.io/Ping-Pong-Scorer-On-Browser/)
+
 ## Features
 
 - Server Indicator: See who should be serving next based on a 2-serve pattern.
