@@ -4,7 +4,7 @@ Mobi’s Ping Pong Scorer is a simple web-based tool to help you and your friend
 
 ## Link
 
-(https://mobiusium.github.io/Ping-Pong-Scorer-On-Browser/)
+[https://mobiusium.github.io/Ping-Pong-Scorer-On-Browser/](https://mobiusium.github.io/Ping-Pong-Scorer-On-Browser/)
 
 ## Features
 
